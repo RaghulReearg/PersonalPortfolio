@@ -214,7 +214,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  min-height: 430px;
+  min-height: 250px;
   overflow: hidden;
   position: relative;
 }
@@ -223,12 +223,12 @@ h3 {
 .hero-visual::after {
   background: #243044;
   content: "";
-  height: 5px;
-  left: 29%;
+  height: 2px;
+  left: 32%;
   position: absolute;
-  top: 34%;
+  top: 38%;
   transform-origin: left center;
-  width: 38%;
+  width: 30%;
 }
 
 .hero-visual::before {
@@ -236,9 +236,9 @@ h3 {
 }
 
 .hero-visual::after {
-  top: 52%;
-  transform: rotate(42deg);
-  width: 47%;
+  top: 55%;
+  transform: rotate(31deg);
+  width: 32%;
 }
 
 .system-card {
@@ -256,21 +256,21 @@ h3 {
   background: var(--white);
   border: 1px solid #b8c4d6;
   display: flex;
-  gap: 20px;
-  left: 7%;
-  min-height: 24%;
-  padding: 28px;
-  top: 14%;
-  width: 42%;
+  gap: 8px;
+  left: 12%;
+  min-height: 14%;
+  padding: 10px 12px;
+  top: 39%;
+  width: 27%;
 }
 
 .card-profile strong {
-  font-size: clamp(4rem, 8vw, 6.5rem);
+  font-size: clamp(1.9rem, 2.6vw, 2.7rem);
   line-height: 0.8;
 }
 
 .card-profile span {
-  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-size: clamp(0.72rem, 0.95vw, 0.92rem);
   font-weight: 760;
   line-height: 1.08;
 }
@@ -278,70 +278,70 @@ h3 {
 .card-stack {
   background: var(--ink);
   color: var(--white);
-  font-size: clamp(1.8rem, 3.2vw, 2.45rem);
+  font-size: clamp(0.72rem, 0.98vw, 0.95rem);
   font-weight: 650;
-  line-height: 1.24;
-  padding: 32px 38px;
-  right: 6%;
-  top: 8%;
-  width: 45%;
+  line-height: 1.28;
+  padding: 11px 14px;
+  right: 13%;
+  top: 18%;
+  width: 27%;
 }
 
 .card-api {
   background: var(--teal);
   color: var(--white);
-  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  font-size: clamp(0.72rem, 0.95vw, 0.92rem);
   font-weight: 650;
-  line-height: 1.24;
-  padding: 32px 38px;
-  right: 3%;
-  top: 54%;
-  width: 38%;
+  line-height: 1.28;
+  padding: 11px 14px;
+  right: 12%;
+  top: 59%;
+  width: 25%;
 }
 
 .card-ai {
   background: var(--blue);
   bottom: 9%;
   color: var(--white);
-  font-size: clamp(1.05rem, 2vw, 1.55rem);
+  font-size: clamp(0.64rem, 0.78vw, 0.78rem);
   font-weight: 680;
-  left: 17%;
+  left: 23%;
   line-height: 1.4;
-  padding: 24px 32px;
-  width: 54%;
+  padding: 9px 12px;
+  width: 32%;
 }
 
 .node {
-  border: 5px solid var(--white);
+  border: 3px solid var(--white);
   border-radius: 50%;
-  height: 34px;
+  height: 16px;
   position: absolute;
-  width: 34px;
+  width: 16px;
   z-index: 3;
 }
 
 .node-a {
   background: var(--teal);
-  left: 47%;
-  top: 31%;
+  left: 39%;
+  top: 38%;
 }
 
 .node-b {
   background: var(--orange);
-  left: 56%;
-  top: 18%;
+  left: 54%;
+  top: 30%;
 }
 
 .node-c {
   background: var(--blue);
-  right: 21%;
-  top: 52%;
+  right: 24%;
+  top: 54%;
 }
 
 .node-d {
   background: var(--orange);
-  bottom: 15%;
-  left: 67%;
+  bottom: 23%;
+  left: 57%;
 }
 
 .metrics {
@@ -597,6 +597,46 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(330px, 0.78fr);
+  }
+
+  .hero-visual {
+    min-height: 245px;
+  }
+
+  .card-profile {
+    padding: 9px 11px;
+  }
+
+  .card-profile strong {
+    font-size: 2rem;
+  }
+
+  .card-profile span {
+    font-size: 0.74rem;
+  }
+
+  .card-stack,
+  .card-api {
+    padding: 10px 12px;
+  }
+
+  .card-stack {
+    font-size: 0.78rem;
+  }
+
+  .card-api {
+    font-size: 0.76rem;
+  }
+
+  .card-ai {
+    font-size: 0.66rem;
+    padding: 8px 10px;
   }
 }
 
