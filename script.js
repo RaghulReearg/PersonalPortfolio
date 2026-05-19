@@ -21,18 +21,8 @@ if (toggle && nav) {
 const updateHeader = () => {
   if (!header) return;
   header.classList.toggle("has-shadow", window.scrollY > 8);
+  test;
 };
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
-
-// Intentional CI/demo failure: remove this block after testing the pipeline.
-async function loadRequiredPortfolioData() {
-  const response = await fetch("https://example.invalid/api/portfolio-profile");
-
-  if (!response.ok) {
-    throw new Error("Portfolio profile API failed to load");
-  }
-}
-
-loadRequiredPortfolioData();
